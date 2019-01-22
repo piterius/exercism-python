@@ -3,7 +3,8 @@
 We are going to do the `Transform` step of an Extract-Transform-Load.
 
 ### ETL
-Extract-Transform-Load (ETL) is a fancy way of saying, "We have some crufty, legacy data over in this system, and now we need it in this shiny new system over here, so
+Extract-Transform-Load (ETL) is a fancy way of saying, "We have some crufty, legacy data over in this system, and now 
+we need it in this shiny new system over here, so
 we're going to migrate this."
 
 (Typically, this is followed by, "We're only going to need to run this
@@ -46,3 +47,7 @@ A final note about scoring, Scrabble is played around the world in a
 variety of languages, each with its own unique scoring table. For
 example, an "A" is scored at 14 in the Basque-language version of the
 game while being scored at 9 in the Latin-language version.
+
+##Source
+
+The Jumpstart Lab team [view source](http://jumpstartlab.com)
