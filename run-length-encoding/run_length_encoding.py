@@ -1,4 +1,4 @@
-def encode3(data):
+def encode(data):
     output, prev, count = '', '', 0
     for char in data:
         if char != prev:
