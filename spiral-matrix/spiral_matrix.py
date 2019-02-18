@@ -1,10 +1,7 @@
-import math
-
-
 def spiral(size):
-    matrix = [[0 for i in range(size)] for j in range(size)]
+    matrix = [[0 for _ in range(size)] for _ in range(size)]
     values = iter(range(1, size ** 2 + 1))
-    for frame in range(math.ceil(size / 2)):
+    for frame in range(size // 2):
         for cell in range(size - 2 * frame - 1):
             matrix[frame][frame + cell] = next(values)
         for cell in range(size - 2 * frame - 1):
