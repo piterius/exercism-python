@@ -14,4 +14,4 @@ def recite(start, stop):
              'eleven Pipers Piping, ',
              'twelve Drummers Drumming, ']
     return ["On the {0} day of Christmas my true love gave to me, {1}".format
-            (days[j], "".join(gifts[i] for i in range(j, -1, -1))) for j in range(start-1, stop, 1)]
+            (days[j], "".join(gifts[i] for i in range(j, -1, -1))) for j in range(start - 1, stop)]
