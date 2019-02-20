@@ -1,4 +1,4 @@
-def distance2(first, second):
+def distance(first, second):
     if len(first) != len(second):
         raise ValueError("Not the same length")
     else:
