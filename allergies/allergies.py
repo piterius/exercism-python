@@ -4,7 +4,7 @@ ALLERGENS = {1: "eggs", 2: "peanuts", 4: "shellfish", 8: "strawberries", 16: "to
 
 class Allergies:
     def __init__(self, score):
-        self.lst = [ALLERGENS[i] for i in ALLERGENS.keys() if i & score]
+        self.lst = [ALLERGENS[i] for i in ALLERGENS if i & score]
 
     def is_allergic_to(self, product):
         return product in self.lst

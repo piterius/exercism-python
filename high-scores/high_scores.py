@@ -15,4 +15,5 @@ class HighScores:
         if self.latest() == self.highest():
             return "Your latest score was {}. That's your personal best!".format(self.latest())
         else:
-            return "Your latest score was {}. That's {} short of your personal best!".format(self.latest(), self.highest() - self.latest())
+            return "Your latest score was {}. That's {} short of your " \
+                   "personal best!".format(self.latest(), self.highest() - self.latest())

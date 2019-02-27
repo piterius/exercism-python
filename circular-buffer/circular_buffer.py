@@ -21,16 +21,16 @@ class CircularBuffer:
         self.pos_read = (self.pos_read + 1) % self.size
         return output
 
-    def write(self, input):
+    def write(self, value):
         if self.buffer[self.pos_write] is not None:
             raise BufferFullException("Buffer is full")
-        self.buffer[self.pos_write] = input
+        self.buffer[self.pos_write] = value
         self.pos_write = (self.pos_write + 1) % self.size
 
-    def overwrite(self, input):
+    def overwrite(self, value):
         if self.buffer[self.pos_write] is not None:
             self.pos_read = (self.pos_read + 1) % self.size
-        self.buffer[self.pos_write] = input
+        self.buffer[self.pos_write] = value
         self.pos_write = (self.pos_write + 1) % self.size
 
     def clear(self):

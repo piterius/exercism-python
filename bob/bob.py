@@ -1,6 +1,6 @@
 def hey(sentence):
     sentence = sentence.strip()
-    if len(sentence) == 0:
+    if not sentence:
         return "Fine. Be that way!"
     elif sentence[-1] == '?' and sentence.isupper():
         return "Calm down, I know what I'm doing!"
